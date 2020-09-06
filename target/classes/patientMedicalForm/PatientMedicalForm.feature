@@ -1,6 +1,6 @@
 @PatientMedicalForm 
 Feature: PatientMedicalForm - JOTFORM
-	ETQ user je souhaite remplir la formulaire  
+	I want to fill in the patient form
 @auth 
 Scenario: PatientMedicalForm - JOTFORM
 	Given open applicationform 
