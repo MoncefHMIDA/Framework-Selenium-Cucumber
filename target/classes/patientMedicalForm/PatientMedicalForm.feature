@@ -1,7 +1,7 @@
 @PatientMedicalForm 
 Feature: PatientMedicalForm - JOTFORM
 	I want to fill in the patient form
-@auth 
+@pmf 
 Scenario: PatientMedicalForm - JOTFORM
 	Given open applicationform 
 	When  set firstname

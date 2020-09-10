@@ -1,0 +1,6 @@
+2020-09-11 00:54:28,005 - com.e2eTest.automation.util.AbstractPage - INFO - Open Browser
+2020-09-11 00:54:31,321 - com.e2eTest.automation.util.AbstractPage - INFO - Send user name
+2020-09-11 00:54:31,662 - com.e2eTest.automation.util.AbstractPage - INFO - Send password
+2020-09-11 00:54:31,818 - com.e2eTest.automation.util.AbstractPage - INFO - Click on Button Login 
+2020-09-11 00:54:56,381 - com.e2eTest.automation.util.AbstractPage - INFO - Open Browser
+2020-09-11 00:54:58,042 - com.e2eTest.automation.util.AbstractPage - INFO - Send user name

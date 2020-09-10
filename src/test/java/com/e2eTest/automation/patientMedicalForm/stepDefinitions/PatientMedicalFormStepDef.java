@@ -1,8 +1,9 @@
-package com.e2eTest.automation.stepDefinitions;
+package com.e2eTest.automation.patientMedicalForm.stepDefinitions;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import com.e2eTest.automation.pageObject.PatientMedicalFormPage;
+
+import com.e2eTest.automation.patientMedicalForm.pageObjects.PatientMedicalFormPage;
 import com.e2eTest.automation.util.CommonMethodes;
 import com.e2eTest.automation.util.Setup;
 import cucumber.api.java.en.Given;

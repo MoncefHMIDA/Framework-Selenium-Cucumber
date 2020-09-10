@@ -1,5 +1,9 @@
 package com.e2eTest.automation.util;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.LoggerFactory;
@@ -9,6 +13,7 @@ import org.slf4j.Logger;
 public class CommonMethodes {
 
 	public static WebDriver driver;
+	public static Properties prop;
 	public CommonMethodes() {
 
 		driver=Setup.driver;
@@ -49,5 +54,13 @@ public class CommonMethodes {
 		driver.navigate().forward();
 
 	}
+	public static void openBrowserWithConfigFile(String url) throws IOException {
+
+		prop= new Properties();
+		FileInputStream fis= new FileInputStream("src/test/resources/configs/configs.properties");
+		prop.load(fis);
+		driver.get(prop.getProperty(url));
+		}
+	
 
 }

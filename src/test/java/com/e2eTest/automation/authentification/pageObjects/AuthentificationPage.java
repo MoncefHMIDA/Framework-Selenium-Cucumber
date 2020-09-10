@@ -1,10 +1,11 @@
-package com.e2eTest.automation.pageObject;
+package com.e2eTest.automation.authentification.pageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+
 
 public class AuthentificationPage {
 
@@ -19,6 +20,11 @@ public class AuthentificationPage {
 	final static String USER_PASSWORD_ID="txtPassword";
 	final static String BUTTON_LOGIN_ID="btnLogin";
 	final static String WELCOME_ID="welcome";
+	final static String ADMIN_LINK="//b[contains(text(),'Admin')]";
+	final static String BUZZ_LINK="//b[contains(text(),'Buzz')]";
+
+
+	
 
 	/// **@FindBy **/
 
@@ -31,6 +37,10 @@ public class AuthentificationPage {
 	@FindBy(how=How.ID, using= WELCOME_ID)
 	public static WebElement welcome;
 
+	@FindBy(how=How.XPATH, using= ADMIN_LINK)
+	public static WebElement linkAdmin;
+	@FindBy(how=How.XPATH, using= BUZZ_LINK)
+	public static WebElement linkBuzz;
 	/// Methods /
 	public void sendUserName() {
 
@@ -46,6 +56,12 @@ public class AuthentificationPage {
 
 		btnLogin.click();
 	}
+	public void clickLinkAdmin() {
+		linkAdmin.click();
+		}
+		public void clickLinkBuzz() {
+			linkBuzz.click();
+		}
 
 
 
